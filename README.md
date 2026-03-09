@@ -75,23 +75,6 @@ Add some content to the file.
 
 ------------------------------------------------------------------------
 
-# 4. Stage the File
-
-Add the file to the staging area
-
-``` bash
-git add example.txt
-```
-
-Or add all modified files:
-
-``` bash
-git add .
-```
-
-
-------------------------------------------------------------------------
-
 # What is a `.gitignore` File?
 
 A `.gitignore` file tells Git **which files or folders it should ignore and not track**.
@@ -118,6 +101,24 @@ touch .gitignore
 
 ```
 
+
+------------------------------------------------------------------------
+
+# 4. Stage the File
+
+Add the file to the staging area
+
+``` bash
+git add example.txt
+```
+
+Or add all modified files:
+
+``` bash
+git add .
+```
+
+
 ------------------------------------------------------------------------
 
 # 5. Commit the Changes
@@ -128,12 +129,24 @@ Commit the staged files with a message.
 git commit -m "Added example.txt file"
 ```
 
-A commit saves a snapshot of your changes in Git history.
+A commit saves a snapshot of your changes in Git history. You need a 
+commit message !
 
 ------------------------------------------------------------------------
 
+# 6. Merge to your Branch
 
-# 6. Merge the Branch into Main
+Push the changes to your branch
+
+``` bash
+git push origin feat/<feature name>
+```
+
+A push adds these changes to your branch in github
+
+------------------------------------------------------------------------
+
+# 7. Merge the Branch into Main
 
 First switch to the main branch:
 
@@ -155,7 +168,7 @@ git merge feature-branch-name
 
 ------------------------------------------------------------------------
 
-# 7. Push the Updated Main Branch
+# 8. Push the Updated Main Branch
 
 Upload the merged changes.
 
